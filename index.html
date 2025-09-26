@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoti | Portfolio</title>
+    <link rel="icon" type="image/png" href="assests/portfolio.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hello, I'm <span class="highlight">Jyoti</span></h1>
+            <h2>Software Developer</h2>
+            <a href="#resume.pdf" class="btn" target="_blank">Resume</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="photo">
+                <img src="assests/photo1.png" alt="Jyoti Photo">
+            </div>
+            <div class="text">
+                <p>Dedicated software developer with strong skills in HTML, CSS, JavaScript. React, TypeScript, Node.js
+                    and
+                    MongoDB. Experienced in building real-world projects at Masai, focusing on clean code and responsive
+                    design.
+                    Committed to learning new technologies and delivering effective web applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><img src="assests/HTML.png" alt="HTML Logo"><span>HTML</span></li>
+            <li><img src="assests//CSS.png" alt="CSS logo"><span>CSS</span></li>
+            <li><img src="assests/JavaScript.png" alt="JavaScript Logo"><span>JavaScript</span></li>
+            <li><img src="assests/React.png" alt="React Logo"><span>React</span></li>
+            <li><img src="assests/Redux.png" alt="Redux Logo"><span>Redux</span></li>
+            <li><img src="assests/DOM.png" alt="DOM Logo"><span>DOM Manipulation</span></li>
+            <li><img src="assests/TypeScript.png" alt="TypeScript Logo"><span>TypeScript</span></li>
+            <li><img src="assests/git.png" alt="Git Logo"><span>git</span></li>
+            <li><img src="assests/GitHub.png" alt="GitHub Logo"><span>GitHub</span></li>
+            <li><img src="assests/VS Code.jpeg" alt="VS Code Logo"><span>VS Code</span></li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+    </section>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("open");
+        });
+    </script>
+</body>
+
+</html>

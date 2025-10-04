@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jyoti | Portfolio</title>
     <link rel="icon" type="image/png" href="assests/portfolio.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -31,8 +27,8 @@
         <div class="overlay"></div>
         <div class="home-content">
             <h1>Hello, I'm <span class="highlight">Jyoti</span></h1>
-            <h2>Full Stack Web Developer</h2>
-            <p class="home-subtitle">I build responsive, modern web applications with clean code and creative UI.</p>
+            <h2>Full Stack Developer | Frontend Enthusiast</h2>
+            <p class="home-subtitle">Creating modern, responsive web applications with clean code and engaging user interfaces.</p>
             <div class="home-buttons">
                 <a href="assests/Jyoti_resume.pdf" download="Jyoti_resume" class="btn">Download Resume</a>
                 <a href="#projects" class="btn btn-secondary">View Projects</a>
@@ -50,11 +46,7 @@
                 <img src="assests/photo1.png" alt="Jyoti Photo">
             </div>
             <div class="text">
-                <p>Dedicated software developer with strong skills in HTML, CSS, JavaScript. React, TypeScript, Node.js
-                    and
-                    MongoDB. Experienced in building real-world projects at Masai, focusing on clean code and responsive
-                    design.
-                    Committed to learning new technologies and delivering effective web applications.</p>
+                <p>A Full Stack Web Developer with a strong focus on frontend development. I specialize in building responsive, modern, and user-friendly web applications with clean code and creative UI designs. I am a quick learner, eager to collaborate on existing projects, and constantly exploring new technologies to enhance my skills. I enjoy transforming ideas into seamless digital experiences and thrive in team-oriented environments. I’m excited to contribute my skills and creativity to impactful projects while growing as a web developer.
             </div>
         </div>
     </section>
@@ -69,6 +61,10 @@
             <li><img src="assests/Redux.png" alt="Redux Logo"><span>Redux</span></li>
             <li><img src="assests/DOM.png" alt="DOM Logo"><span>DOM Manipulation</span></li>
             <li><img src="assests/TypeScript.png" alt="TypeScript Logo"><span>TypeScript</span></li>
+            <li><img src="assests/nodejs.jpg" alt="Node JS Logo"><span>Node JS</span></li>
+            <li><img src="assests/Express.png" alt="Express JS Logo"><span>Express JS</span></li>
+            <li><img src="assests/MongoDB.png" alt="MongoDB Logo"><span>MongoDB</span></li>
+            <li><img src="assests/POSTMAN.png" alt="POSTMAN Logo"><span>POSTMAN</span></li>
             <li><img src="assests/git.png" alt="Git Logo"><span>git</span></li>
             <li><img src="assests/GitHub.png" alt="GitHub Logo"><span>GitHub</span></li>
             <li><img src="assests/VS Code.jpeg" alt="VS Code Logo"><span>VS Code</span></li>
@@ -90,9 +86,9 @@
                     <span>JavaScript</span>
                 </div>
                 <div class="project-buttons">
-                    <a href="https://github.com/Jyoti-coder1/HomeRenovationTracker_Management_Sayan" target="_blank"
-                        class="btn">🔗GitHub</a>
-                    <a href="https://project1-deployment-link.com" target="_blank" class="btn">🔗Deployment</a>
+                    <a href="https://github.com/Jyoti-coder1/HomeRenovationTracker_Management_Sayan" target="_blank">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
                 </div>
             </div>
 
@@ -111,9 +107,9 @@
                     <span>CSS</span>
                 </div>
                 <div class="project-buttons">
-                    <a href="https://github.com/Jyoti-coder1/Projects/tree/main/social-media-scheduler" target="_blank"
-                        class="btn">🔗GitHub</a>
-                    <a href="https://project2-deployment-link.com" target="_blank" class="btn">🔗Deployment</a>
+                    <a href="https://github.com/Jyoti-coder1/Projects/tree/main/social-media-scheduler" target="_blank">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -137,26 +133,27 @@
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <div class="contact-info">
-            <p>Email: <a href="mailto:yourname@example.com">jyotimathsdev@gmail.com</a></p>
-            <p>Phone: <a href="tel:+911234567890">+91 9812710416</a></p>
+            <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:example@gmail.com">jyotimathsdev@gmail.com</a>
+            </p>
+            <p>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+911234567890">+91 9812710416</a>
+            </p>
+
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/jyoti-j225" target="_blank" class="social-link">LinkedIn</a>
-                <a href="https://github.com/Jyoti-coder1" target="_blank" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/jyoti-j225" target="_blank">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://github.com/Jyoti-coder1" target="_blank">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
             </div>
             <a href="assests/Jyoti_resume.pdf" download="Jyoti_Resume.pdf" target="_blank" class="resume-btn">Download
                 Resume</a>
         </div>
     </section>
 
-    <script>
-        const hamburger = document.getElementById("hamburger");
-        const navLinks = document.getElementById("nav-links");
-
-        hamburger.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-            hamburger.classList.toggle("open");
-        });
-    </script>
 </body>
-
 </html>

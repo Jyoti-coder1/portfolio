@@ -13,6 +13,12 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -28,7 +34,8 @@
         <div class="home-content">
             <h1>Hello, I'm <span class="highlight">Jyoti</span></h1>
             <h2>Full Stack Developer | Frontend Enthusiast</h2>
-            <p class="home-subtitle">Creating modern, responsive web applications with clean code and engaging user interfaces.</p>
+            <p class="home-subtitle">Creating modern, responsive web applications with clean code and engaging user
+                interfaces.</p>
             <div class="home-buttons">
                 <a href="assests/Jyoti_resume.pdf" download="Jyoti_resume" class="btn">Download Resume</a>
                 <a href="#projects" class="btn btn-secondary">View Projects</a>
@@ -46,7 +53,12 @@
                 <img src="assests/photo1.png" alt="Jyoti Photo">
             </div>
             <div class="text">
-                <p>A Full Stack Web Developer with a strong focus on frontend development. I specialize in building responsive, modern, and user-friendly web applications with clean code and creative UI designs. I am a quick learner, eager to collaborate on existing projects, and constantly exploring new technologies to enhance my skills. I enjoy transforming ideas into seamless digital experiences and thrive in team-oriented environments. I’m excited to contribute my skills and creativity to impactful projects while growing as a web developer.
+                <p>A Full Stack Web Developer with a strong focus on frontend development. I specialize in building
+                    responsive, modern, and user-friendly web applications with clean code and creative UI designs. I am
+                    a quick learner, eager to collaborate on existing projects, and constantly exploring new
+                    technologies to enhance my skills. I enjoy transforming ideas into seamless digital experiences and
+                    thrive in team-oriented environments. I’m excited to contribute my skills and creativity to
+                    impactful projects while growing as a web developer.
             </div>
         </div>
     </section>
@@ -78,7 +90,9 @@
                 <img src="assests/project1.png" alt="Project 1">
                 <h3>Home Renovation Tracker Management</h3>
                 <p>
-                    A responsive web application to manage home renovation projects efficiently. Track projects, tasks, expenses, permits, shopping lists, inventory, contractors, maintenance tasks, and inspiration resources - all in one place.
+                    A responsive web application to manage home renovation projects efficiently. Track projects, tasks,
+                    expenses, permits, shopping lists, inventory, contractors, maintenance tasks, and inspiration
+                    resources - all in one place.
                 </p>
                 <div class="tech-stack">
                     <span>HTML</span>
@@ -99,7 +113,8 @@
                 <img src="assests/project2.png" alt="Project 2">
                 <h3>Social Media Content Scheduler</h3>
                 <p>
-                    A React JS-based platform to schedule, manage, and track social media posts with analytics, bulk upload, hashtag suggestions, and multi-platform integration.
+                    A React JS-based platform to schedule, manage, and track social media posts with analytics, bulk
+                    upload, hashtag suggestions, and multi-platform integration.
                 </p>
                 <div class="tech-stack">
                     <span>React</span>
@@ -161,5 +176,23 @@
         </div>
     </section>
 
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+
+        const links = navLinks.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            });
+        });
+    </script>
 </body>
+
 </html>
